@@ -1,0 +1,26 @@
+.wrapper {
+    position: sticky;
+    top: 15px;
+    padding: 10px;
+    width: 265px;
+    height: fit-content;
+    border: 1px solid #cfcfe4;
+    border-radius: 15px;
+}
+.btn {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0px 10px;
+    width: 100%;
+    height: 2.625rem;
+    background-color: inherit;
+    border: none;
+    letter-spacing: -0.1px;
+    &:hover {
+        transition: all 0.2s ease-in-out;
+        color: white;
+        background-color: #5fbf77;
+        border-radius: 15px;
+    }
+}
