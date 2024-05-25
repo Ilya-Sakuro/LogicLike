@@ -1,7 +1,6 @@
-import { ChooseСoursesContext } from 'context/ChooseСoursesContext';
 import { useCardContext } from 'hooks/useCardContext';
 import { useChooseСourses } from 'hooks/useChooseСourses';
-import { useContext, useMemo } from 'react';
+
 import styles from './card.module.scss';
 
 export type Card = {
