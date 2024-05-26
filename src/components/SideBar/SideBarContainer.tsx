@@ -1,13 +1,13 @@
 import { useCardQuery } from 'hooks/useCardQuery';
 import { useMemo } from 'react';
-import { Card } from 'types/Card';
+import { CardType } from 'types/CardType';
 import SideBar from './SideBar';
 
 const SideBarContainer = () => {
     const { cards, isFetched, error } = useCardQuery();
     const filteredTags = useMemo(() => {
         const tagsSet: Set<string> = new Set();
-        cards?.forEach((card: Card) => {
+        cards?.forEach((card: CardType) => {
             card.tags?.forEach(tag => tagsSet.add(tag));
         });
         return Array.from(tagsSet);

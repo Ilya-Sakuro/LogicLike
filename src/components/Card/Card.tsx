@@ -1,6 +1,6 @@
 import { useChooseСourses } from 'hooks/useChooseСourses';
 import { FC } from 'react';
-import { Card, CardPops } from 'types/Card';
+import { CardType, CardPops } from 'types/CardType';
 import styles from './card.module.scss';
 
 const Card: FC<CardPops> = ({ cards }) => {
@@ -8,12 +8,12 @@ const Card: FC<CardPops> = ({ cards }) => {
 
     const filterСourses = () => {
         if (!tagCurses) return cards;
-        return cards?.filter((course: Card) => course.tags?.includes(tagCurses));
+        return cards?.filter((course: CardType) => course.tags?.includes(tagCurses));
     };
 
     return (
         <div className={styles.wrapper}>
-            {filterСourses()?.map((card: Card) => (
+            {filterСourses()?.map((card: CardType) => (
                 <div
                     key={card.id}
                     style={{

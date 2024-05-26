@@ -1,4 +1,5 @@
-import { ChooseСoursesContext, СoursesContextValue } from 'context/ChooseСoursesContext';
+import { ChooseСoursesContext } from 'context/ChooseСoursesContext';
+import { СoursesContextValue } from 'types/ChooseСoursesType';
 import { useContext } from 'react';
 
 export const useChooseСourses = (): СoursesContextValue => {

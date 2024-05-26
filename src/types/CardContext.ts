@@ -1,7 +1,7 @@
-import { Card } from './Card';
+import { CardType } from './CardType';
 
 export type CardContextValue = {
-    cards: Card[] | undefined;
+    cards: CardType[] | undefined;
     isFetched: boolean;
     error: Error | null;
 };

@@ -1,4 +1,4 @@
-export type Card = {
+export type CardType = {
     name: string;
     id: string;
     image: string;
@@ -6,5 +6,5 @@ export type Card = {
     tags?: Array<string>;
 };
 export type CardPops = {
-    cards: Card[];
+    cards: CardType[];
 };

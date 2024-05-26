@@ -1,3 +1,3 @@
 export type SideBarPops = {
-    buttonsFromTags: Array<String>;
+    buttonsFromTags: Array<string>;
 };

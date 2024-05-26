@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { СoursesContextValue } from 'types/ChooseСoursesContext';
+import { СoursesContextValue } from 'types/ChooseСoursesType';
 
 export const ChooseСoursesContext = React.createContext<СoursesContextValue | null>(null);
 
