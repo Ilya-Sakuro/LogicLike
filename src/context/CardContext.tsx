@@ -1,12 +1,6 @@
 import { useQuery } from '@tanstack/react-query';
-import { Card } from 'components/Card/Card';
 import React from 'react';
-
-export type CardContextValue = {
-    cards: Card[] | undefined;
-    isFetched: boolean;
-    error: Error | null;
-};
+import { CardContextValue } from 'types/CardContext';
 
 export const CardContext = React.createContext<CardContextValue | null>(null);
 

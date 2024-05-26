@@ -1,9 +1,5 @@
-import React, { Dispatch, SetStateAction, useState } from 'react';
-
-export type СoursesContextValue = {
-    tagCurses: string;
-    setTagCurses: Dispatch<SetStateAction<string>>;
-};
+import React, { useState } from 'react';
+import { СoursesContextValue } from 'types/ChooseСoursesContext';
 
 export const ChooseСoursesContext = React.createContext<СoursesContextValue | null>(null);
 

@@ -17,10 +17,17 @@
     background-color: inherit;
     border: none;
     letter-spacing: -0.1px;
+    border-radius: 15px;
     &:hover {
         transition: all 0.2s ease-in-out;
         color: white;
         background-color: #5fbf77;
-        border-radius: 15px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+        margin-right: 24px;
     }
 }

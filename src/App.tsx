@@ -1,6 +1,6 @@
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
-import Card from 'components/Card/Card';
-import SideBar from 'components/SideBar/SideBar';
+import CardContainer from 'components/Card/CardContainer';
+import SideBarContainer from 'components/SideBar/SideBarContainer';
 import CardProvider from 'context/CardContext';
 import ChooseСoursesProvider from 'context/ChooseСoursesContext';
 import MainPage from 'Pages/MainPage';
@@ -14,8 +14,8 @@ function App() {
             <CardProvider>
                 <ChooseСoursesProvider>
                     <MainPage>
-                        <SideBar />
-                        <Card />
+                        <SideBarContainer />
+                        <CardContainer />
                     </MainPage>
                 </ChooseСoursesProvider>
             </CardProvider>
