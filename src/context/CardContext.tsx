@@ -14,6 +14,24 @@ const CardProvider = ({ children }: { children: React.ReactNode }) => {
         queryFn: () => fetch('https://logiclike.com/docs/courses.json').then(res => res.json()),
     });
 
+    if (!isFetched) {
+        return (
+            <CardContext.Provider value={{ cards, isFetched, error }}>
+                <h1> Loading...</h1>
+            </CardContext.Provider>
+        );
+    }
+
+    if (error) {
+        console.error(error.message);
+
+        return (
+            <CardContext.Provider value={{ cards, isFetched, error }}>
+                <h1>An error has occurred: {error.message}</h1>
+            </CardContext.Provider>
+        );
+    }
+
     return (
         <CardContext.Provider value={{ cards, isFetched, error }}>{children}</CardContext.Provider>
     );
